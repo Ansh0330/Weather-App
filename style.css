@@ -15,7 +15,8 @@
 .wrapper{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     color: var(--colorLight2);
     background : linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
 }
@@ -230,4 +231,33 @@ h1 {
     align-items: center;
     justify-content: center;
     border-radius:50% ;
+}
+
+@media screen and (max-width: 768px){
+    .tab-container{
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    .parameter-container{
+        flex-wrap: wrap;
+    }
+
+    .parameter{
+        width: 45%;
+    }
+
+    .form-container{
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    .form-container input{
+        width: 100%;
+    }
+
+    .form-container .btn{
+        width: 20%;
+        
+    }
 }
